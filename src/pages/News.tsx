@@ -36,7 +36,7 @@ console.log(location.search);
           <h1>loading...</h1>
         ) : (
           <div className="flex flex-wrap justify-center ">
-            {articles.map((article, index) => {
+            {articles&&articles.map((article, index) => {
               if (article.description == "[Removed]" || !article.urlToImage) {
                 return null;
               }
